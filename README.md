@@ -110,6 +110,6 @@ AI recap generation depends on the provider you configure, but the core transcri
 
 ## Notes
 
-- The first model download can make the first recording feel slower than normal.
+- The first time you download the Parakeet model can take up to 5 minutes depending on your network speed. Transcription won't work until the model is downloaded. 
 - Auto-updates use the assets published in this repository.
 - For the latest signed build, always use the most recent stable release in this repo.
