@@ -81,6 +81,124 @@ If you use Outlook, you can connect calendar access so LuckyCharms can better id
 
 The first recording downloads the local speech model. That is a one-time setup step, so the first run can take longer than later recordings.
 
+## Quick Start
+
+If you want the fastest path to understanding the product, do this:
+
+1. Install LuckyCharms and complete the first-run setup.
+2. Start or record one real meeting.
+3. Let the transcript run during the meeting.
+4. Add a few personal notes while the meeting is happening.
+5. Stop recording and generate the AI recap.
+6. Create a tag like `Customer` or `Interview` and assign it to the meeting.
+7. Come back later and search for that meeting or ask a question across your meeting history.
+
+That single workflow exercises most of what makes LuckyCharms useful.
+
+## Configure AI Meeting Summaries
+
+LuckyCharms separates transcription from summarization:
+
+- transcription runs locally on your Mac
+- AI meeting recaps use the provider you configure in Settings
+
+To set up summaries:
+
+1. Open `Settings` in LuckyCharms.
+2. Choose an AI provider.
+3. Enter the required API key if that provider needs one.
+4. Pick the model you want to use for meeting notes.
+5. Save your changes.
+
+Notes:
+
+- Keys are stored locally in macOS Keychain.
+- You can change providers or models later.
+- If you only want local transcription and not AI summaries yet, you can still use LuckyCharms without generating recaps.
+
+## Connect Outlook Calendar
+
+Outlook calendar integration helps LuckyCharms recognize and title meetings more intelligently.
+
+When Outlook is connected, LuckyCharms can:
+
+- identify scheduled meetings more accurately
+- use calendar titles and metadata to improve meeting organization
+- make the day-to-day workflow smoother if your calendar is already the source of truth
+
+To connect Outlook:
+
+1. Open `Settings`.
+2. Find the `Outlook Calendar` section.
+3. Start the connection flow.
+4. Follow the Microsoft sign-in steps shown by the app.
+
+After setup, LuckyCharms will use that calendar context automatically.
+
+## Organize Meetings with Tags
+
+Tags are the simplest way to turn meeting history into something useful over time.
+
+Examples:
+
+- `Customer`
+- `Interview`
+- `Private`
+- `Board`
+- `Tesla`
+
+Typical tag workflow:
+
+1. Create reusable tags in `Settings`.
+2. Open a meeting detail page.
+3. Assign one or more tags to that meeting.
+4. Use the sidebar to filter meetings by a tag later.
+
+Tags also participate in:
+
+- meeting search
+- dashboard filtering
+- cross-meeting AI retrieval
+
+That means a question like "action items from customer meetings this week" can use tag information to focus the answer on the right subset of meetings.
+
+## Search and Ask Questions
+
+LuckyCharms gives you two different ways to find information:
+
+### Search
+
+Use search when you want to find a specific meeting or phrase quickly.
+
+Search covers:
+
+- meeting titles
+- attendees
+- tags
+- personal notes
+- transcripts
+- AI summaries
+
+Good examples:
+
+- `tesla`
+- `pricing`
+- `customer`
+- `roadmap`
+
+### Cross-meeting questions
+
+Use the Ask flow when you want LuckyCharms to synthesize information across multiple meetings.
+
+Good examples:
+
+- "What action items came out of customer meetings this week?"
+- "What decisions did we make about pricing?"
+- "Summarize recent interview feedback."
+- "What did we commit to for Tesla?"
+
+This is where tags, summaries, notes, and transcript history work together.
+
 ## What You Get After a Meeting
 
 LuckyCharms is built to turn a finished meeting into something useful immediately:
@@ -113,3 +231,5 @@ AI recap generation depends on the provider you configure, but the core transcri
 - The first time you download the Parakeet model can take up to 5 minutes depending on your network speed. Transcription won't work until the model is downloaded. 
 - Auto-updates use the assets published in this repository.
 - For the latest signed build, always use the most recent stable release in this repo.
+- If summaries are not working, check that your provider and API key are configured in `Settings`.
+- If remote participants are missing from transcripts, confirm Screen Recording permission is enabled for LuckyCharms in macOS Privacy & Security settings.
